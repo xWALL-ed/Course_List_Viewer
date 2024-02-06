@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.depsubviewer.ControllerLP">
+   <children>
+      <Label layoutX="205.0" layoutY="64.0" text="Welcome to my">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="165.0" text="&quot;Department Wise Course Viewer&quot;">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="120.0" text="JAVA APPLICATION">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="244.0" layoutY="282.0" mnemonicParsing="false" onAction="#click" text="PRESS To Continue" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<SplitPane dividerPositions="0.4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.depsubviewer.Controller1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ComboBox fx:id="depBox" layoutX="104.0" layoutY="136.0" prefWidth="150.0" promptText="Select Department" />
+            <ComboBox fx:id="semBox" layoutX="104.0" layoutY="244.0" prefWidth="150.0" promptText="Select Semester" />
+            <Label layoutX="99.0" layoutY="26.0" text="Choose Department">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="169.0" layoutY="53.0" text="&amp;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="80.0" text="Semester">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="viewBtn" layoutX="153.0" layoutY="323.0" mnemonicParsing="false" onAction="#clickViewBtn" text="View" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <TextArea fx:id="subView1" editable="false" layoutX="9.0" layoutY="61.0" prefHeight="318.0" prefWidth="88.0" promptText="ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="233.0" layoutY="19.0" text="Subjects">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="subView2" editable="false" layoutX="98.0" layoutY="61.0" prefHeight="318.0" prefWidth="356.0" promptText="Title">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="subView3" editable="false" layoutX="455.0" layoutY="61.0" prefHeight="318.0" prefWidth="71.0" promptText="Credit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
